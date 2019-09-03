@@ -20,6 +20,8 @@ class Song
     @@all.last
   end 
   
+  
+  
   def self.all
     @@all
   end 
