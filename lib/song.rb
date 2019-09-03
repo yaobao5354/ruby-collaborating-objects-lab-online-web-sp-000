@@ -15,6 +15,8 @@ class Song
   def self.new_by_filename(filename)
     name = filename.split("-")[1].strip
     self.new(name)
+    artist = Artist.new(filename.split("-")[0].strip)
+    @@all.last(artist)
   end 
   
   def self.all
