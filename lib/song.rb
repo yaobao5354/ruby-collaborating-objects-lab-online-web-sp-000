@@ -22,7 +22,7 @@ class Song
   
   def artist_name=(artist)
     binding.pry
-    self.artists = Artist.find_or_create_by_name(artist)
+    self.artist = Artist.find_or_create_by_name(artist)
   end   
   
   def self.all
