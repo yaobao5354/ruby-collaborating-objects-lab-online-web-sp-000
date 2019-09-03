@@ -17,6 +17,7 @@ class Song
     self.new(name)
     artist = Artist.new(filename.split("-")[0].strip)
     @@all.last.artist = artist
+    @@all.last
   end 
   
   def self.all
